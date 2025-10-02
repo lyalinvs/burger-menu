@@ -1,0 +1,30 @@
+// импорт всех scss файлов
+
+// Импорт google шрифтов
+@import "./components/_fonts";
+
+// Нормализация, обнуление стилей
+@import "./normalize/_normalize";
+
+// Переменные
+@import './components/_variables';
+
+// Импорт функций
+@import "./functions/_rem";
+
+// Базовые стили (body, заголовки...)
+@import "./base/_base";
+
+// Основные, самостоятельный блоки, контейнеры, оболочки (wrapper, __container...)
+@import "./layout/_layout";
+
+// Отдельные компоненты (хедер, навигация(меню), футер, карточки, формы)
+@import "./components/_header";
+@import "./components/_navigator";
+@import "./components/_footer";
+
+// Стилизация темы
+// @import 'theme/theme';
+
+// брейкпоинты
+@import "./components/_mediaqueries";

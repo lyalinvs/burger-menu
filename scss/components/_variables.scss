@@ -1,0 +1,30 @@
+// Переменные для сайта
+
+// Шрифты
+$font-family: "Heebo", sans-serif;
+
+// Размеры шрифтов
+$fontSize: 14px;
+
+// Цвета
+$color-bg: #E5E5E5;
+$color-primary: #ff6464;
+$color-secondry: #00a8cc;
+$color-dark: #21243d;
+$color-light: #8695a4;
+
+// Высота блоков
+$header-height: 4rem;
+$footer-height: 2.25rem;
+
+// Минимальная ширина страницы 
+$minWidth: 320px;
+
+// Ширина полотна (макета)
+$maxWidth: 1920px;
+
+// Ширина ограничивающего контейнера
+$maxWidthContainer: 992px; //по макету
+
+// Отступы безопасности контейнера
+$g-x: 0.75rem; // по 12px слева и справа

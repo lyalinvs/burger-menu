@@ -1,0 +1,18 @@
+/*=============== FOOTER ===============*/
+.footer{
+	height: $footer-height;
+	&__container{
+		height: 100%;
+		span{
+			font-size: 0.75rem;
+    		font-weight: 500;
+		}
+	}
+	&__copyright{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}

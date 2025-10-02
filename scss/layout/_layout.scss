@@ -1,0 +1,65 @@
+//оболочка
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+//прижать footer вниз
+.wrapper{
+	> main{
+		flex: 1 1 auto;
+	}
+}
+
+//ограничивающий контейнер из bootstrap
+[class*=__container] {
+  margin: 0 auto;
+  padding: 0 $g-x;
+  //max-width: 100%;
+  max-width: $maxWidthContainer;
+}
+
+//далее контейнер для колонок
+[class*=__row] {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-right: calc(-1 * $g-x); // (-0.75) отступ безопасности будут убраны
+  margin-left: calc(-1 * $g-x); // (-0.75) отступ безопасности будут убраны
+}
+
+[class*=__row] > * {
+  flex-shrink: 0; // flex элементу запрещено уменьшаться его базового размера
+  width: 100%;
+  max-width: 100%;
+  padding-right: $g-x; // (0.75) отступ безопасности у __column чтобы внутри контент не прилипал
+  padding-left: $g-x; // (0.75) отступ безопасности у __column чтобы внутри контент не прилипал
+  margin-top: 0;
+}
+
+//колонки
+[class*=__column-1]{
+	flex: 0 0 auto;
+	width: 100%
+}
+
+[class*=__column-2]{
+	flex: 0 0 auto;
+	width: calc(100% / 2);
+}
+
+[class*=__column-3]{
+	flex: 0 0 auto;
+	width: calc(100% / 3);
+}
+
+[class*=__column-4]{
+	flex: 0 0 auto;
+	width: calc(100% / 4);
+}
+
+[class*=__column-5]{
+	flex: 0 0 auto;
+	width: calc(100% / 5);
+}

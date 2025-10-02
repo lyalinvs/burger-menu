@@ -1,0 +1,33 @@
+/*=============== BASE ===============*/
+html,
+body{
+    height: 100%;
+}
+
+body{
+    font-family: $font-family;
+    font-size: $fontSize;
+	font-weight: normal;
+	line-height: 1.5;
+    background-color: $color-bg;
+    color: $color-dark;
+}
+
+.button{
+	display: inline-block;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #fff;	
+	font-weight: 500;
+	font-size: 14px;
+	word-break: break-word;
+	padding: .65rem 1.5rem;
+	transition: all .25s;
+}
+
+.button:hover{
+	color: #fff;
+	background-color: #000;
+	border: 1px solid #000;
+}
+

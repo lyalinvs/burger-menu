@@ -1,0 +1,8 @@
+/*=============== HEADER ===============*/
+.header {
+	position: relative;
+	height: $header-height;
+	&__container{
+		height: 100%;
+	}
+}

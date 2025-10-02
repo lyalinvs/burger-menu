@@ -1,0 +1,7 @@
+@use 'sass:math';
+// переводит из rem в px
+// пример: font-size: rem(18); padding-top: rem(150);
+@function rem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}
