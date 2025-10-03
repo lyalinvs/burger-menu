@@ -1,13 +1,23 @@
 /*=============== NAV ===============*/
 .nav{
 	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: flex-end;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
     
     &__list{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		column-gap: 33px;
+		-webkit-column-gap: 33px;
+		   -moz-column-gap: 33px;
+		        column-gap: 33px;
 	}
 
     &__link{
@@ -25,8 +35,13 @@
 			position: relative;
 			width: 30px;
 			cursor: pointer;
+			display: -webkit-box;
+			display: -ms-flexbox;
 			display: flex;
-			flex-direction: column;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
 			row-gap: 5px;
 			z-index: 99;
 			
@@ -36,6 +51,8 @@
 				height: 4px;
 				background-color: $color-dark;
 				border-radius: 2px;
+				-webkit-transition: all .3s;
+				-o-transition: all .3s;
 				transition: all .3s;
 			}
 
@@ -43,13 +60,17 @@
 				background-color: $color-light;
 
 				&:nth-child(1){
-					transform: translateY(13px) rotate(45deg);
+					-webkit-transform: translateY(13px) rotate(45deg);
+					    -ms-transform: translateY(13px) rotate(45deg);
+					        transform: translateY(13px) rotate(45deg);
 				}	
 				&:nth-child(2){
 					opacity: 0;
 				}
 				&:nth-child(3){
-					transform: translateY(-5px) rotate(-45deg);
+					-webkit-transform: translateY(-5px) rotate(-45deg);
+					    -ms-transform: translateY(-5px) rotate(-45deg);
+					        transform: translateY(-5px) rotate(-45deg);
 				}				
 			}
 		}
@@ -67,10 +88,15 @@
 			padding: 40px 25px;
 			background-color: $color-dark;
 			z-index: 9;
+			-webkit-transition: right .3s;
+			-o-transition: right .3s;
 			transition: right .3s;
 		}
 		&__list{
-			flex-direction: column;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
 			row-gap: 25px;
 		}
 		&__link{
@@ -79,7 +105,6 @@
 		}
 	}
 } 
-
 
 /* Show menu */
 .js-show-menu{
